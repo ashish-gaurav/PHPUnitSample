@@ -1,0 +1,20 @@
+env:
+  global:
+  - CI_HOME=`pwd`/../../
+  - secure: EyPzIL6+pHHlvjGCnTWc+SoaKGDN0G9BRyZAbzc/Oq3qZUYJf5SaHg5/cAmientS/ol5/3Kuq+3CWwJ7n8KZE+6mbRQPAvB4v9YBqbKARFrbVOn3vCsg8GRnLRcWHli3AJ9NNA3e/oiBtVw/RggAKYZjUuKFsb3NSyELbihbojU=
+  - secure: Tjjx22mkhdR7Lx0hU0WT+M6lzTVK4hT8ABnIzS5izbrR7gXEmUpMN+92qlBif/UvKAmsZ7je1g4MfQXQ8e00UETmZ/l/BgIbAej2ZRBDTH2XnJoGcdX+sgCxeAwQMVgy4ruVzB5p0Ymz6seMrPBSCueHM+9wrpJzfZmOOI/E788=
+  - secure: iily177DrDh8jY5Xd8NDDE5h23d1t+t0mrF8kwwyxkWPsN6JfjZ6JSF9b33CSLzSY/UVH9hLFp9gMvGg0X7L+2GDgJQhoGsjaFPU30HtY9jXyhwM+6oVdf4yJLYuUXSxIer5rFbUdz7qiwebCB/y5iWdLC9CEHZPNV377ooZaAA=
+  - secure: HXK1gOhvZcv3Wf7slHw+k/i8VqUK0tM953hw4zh6pY53U5+ag22YKhhjJ2kIMHRNJdySb0djxywXzkauj5U4QczsZSfK6OZ4TnaiaIV/W/Mrlmp4oanucHdym724SEO9EFcMhDeE9ROMTyPBNxBQg9RcnZCwtQpWPP9EQezenXo=
+language: php
+php:
+- 5.5
+services:
+- memcached
+- redis-server
+- elasticsearch
+- rabbitmq
+
+notifications:
+  webhooks:
+    urls:
+      - http://178.62.43.49:9080/integrations/travis/816387cfc944a02a0e270d56e290b453
