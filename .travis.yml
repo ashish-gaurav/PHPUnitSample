@@ -21,4 +21,4 @@ notifications:
     urls:
       - http://178.62.43.49:9080/integrations/travis/816387cfc944a02a0e270d56e290b453
       
-script: phpunit --configuration phpunit.xml      
+script: phpunit --bootstrap phpunit.xml      
